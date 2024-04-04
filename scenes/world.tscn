@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7rh44u2iin20"]
+
+[ext_resource type="PackedScene" uid="uid://cn4uoj4p66kor" path="res://scenes/player.tscn" id="1_v82dd"]
+[ext_resource type="PackedScene" uid="uid://jmcnhtjdd3ck" path="res://scenes/platform.tscn" id="2_remxp"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_v82dd")]
+position = Vector2(153, 82)
+player_speed = 250
+jump_force = 500
+
+[node name="Platform" parent="." instance=ExtResource("2_remxp")]
+position = Vector2(120, 168)
+
+[node name="Platform2" parent="." instance=ExtResource("2_remxp")]
+position = Vector2(-28, 103)
+
+[node name="Platform3" parent="." instance=ExtResource("2_remxp")]
+position = Vector2(349, 132)
+
+[node name="Platform4" parent="." instance=ExtResource("2_remxp")]
+position = Vector2(-99, 168)
